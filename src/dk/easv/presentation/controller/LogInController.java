@@ -28,19 +28,15 @@ public class LogInController implements Initializable {
     }
 
     public void logIn(ActionEvent actionEvent) {
-        model.loadUsers();
-        model.loginUserFromUsername(userId.getText());
-        if(model.getObsLoggedInUser()!=null){
+
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/dk/easv/presentation/view/App.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/dk/easv/presentation/view/Player.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.setTitle("Movie Recommendation System 0.01 Beta");
+            stage.setTitle("Movie Recommendation System 0.02 Beta");
             stage.show();
-            AppController controller = loader.getController();
-
-            controller.setModel(model);
+            ;
 
 
         } catch (IOException e) {
@@ -50,11 +46,8 @@ public class LogInController implements Initializable {
         }
 
         }
-        else{
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Wrong username or password");
-            alert.showAndWait();
-        }
-    }
+
+
 
     public void signUp(ActionEvent actionEvent) {
         System.out.println("Sign-Up");

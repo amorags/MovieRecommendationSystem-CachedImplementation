@@ -10,27 +10,19 @@
 .text-field {
     -fx-background-color: Black;
     -fx-border-width: 2px;
-    -fx-background-radius: 8px;
-    -fx-border-radius: 8px;
-    -fx-border-color: Darkblue;
-    -fx-text-fill: blue;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-text-fill: Grey;
     -fx-font-family: "Gill Sans MT";
     -fx-font-size: 20px;
     -fx-font-style: Bold, italic;
     -fx-background-repeat: 2px;
 }
 
-.text {
--fx-text-fill: White;
--fx-font-family: "Gill Sans MT";
--fx-font-size: 20px;
--fx-font-style: Bold, italic;
-}
 
 .button {
     -fx-background-radius: 8px;
     -fx-background-color: Black;
-    -fx-text-fill: Blue;
     -fx-border-color: grey;
     -fx-border-width: 2px;
     -fx-border-radius: 8px;
