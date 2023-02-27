@@ -12,11 +12,7 @@
     -fx-border-width: 2px;
     -fx-background-radius: 20px;
     -fx-border-radius: 20px;
-    -fx-text-fill: Grey;
-    -fx-font-family: "Gill Sans MT";
-    -fx-font-size: 20px;
-    -fx-font-style: Bold, italic;
-    -fx-background-repeat: 2px;
+    -fx-text-fill: red;
 }
 
 
@@ -26,5 +22,4 @@
     -fx-border-color: grey;
     -fx-border-width: 2px;
     -fx-border-radius: 8px;
-    -fx-background-repeat: 4px;
 }

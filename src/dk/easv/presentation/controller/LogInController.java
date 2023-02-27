@@ -29,23 +29,30 @@ public class LogInController implements Initializable {
 
     public void logIn(ActionEvent actionEvent) {
 
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/dk/easv/presentation/view/Player.fxml"));
-            Parent root = loader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Movie Recommendation System 0.02 Beta");
-            stage.show();
-            ;
+        model.loadUsers();
+        model.loginUserFromUsername(userId.getText());
+        if (model.getObsLoggedInUser() != null) {
+
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/dk/easv/presentation/view/Player.fxml"));
+                Parent root = loader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.setTitle("Movie Recommendation System 0.02 Beta");
+                stage.show();
+                PlayerController controller = loader.getController();
+
+                controller.setModel(model);
 
 
-        } catch (IOException e) {
-            e.printStackTrace();
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Could not load App.fxml");
-            alert.showAndWait();
+            } catch (IOException e) {
+                e.printStackTrace();
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Could not load App.fxml");
+                alert.showAndWait();
+            }
+
         }
-
-        }
+    }
 
 
 
