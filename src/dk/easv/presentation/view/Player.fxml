@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -172,7 +173,14 @@
                            </children>
                         </HBox>
                      </children></HBox>
-                  <ListView fx:id="lvTopUser" prefHeight="562.0" prefWidth="638.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS" />
+                  <StackPane fx:id="stacky" prefHeight="606.0" prefWidth="638.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <ListView fx:id="lvTopUser" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+                        <ListView fx:id="lvTopMovie" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+                        <ListView fx:id="lvTopSimilar" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+                        <ListView fx:id="lvTopReco" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </StackPane>
                </children>
             </VBox>
          </center>
