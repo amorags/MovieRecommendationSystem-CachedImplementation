@@ -1,0 +1,25 @@
+
+.root {
+    -fx-background-color: Black;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-background-size: 2px;
+
+}
+
+.text-field {
+    -fx-background-color: Black;
+    -fx-border-width: 2px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-text-fill: red;
+}
+
+
+.button {
+    -fx-background-radius: 8px;
+    -fx-background-color: Black;
+    -fx-border-color: grey;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}

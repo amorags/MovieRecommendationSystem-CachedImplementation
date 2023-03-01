@@ -1,0 +1,14 @@
+.list-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: Snow;
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 14px;
+}
+
+.list-cell-selected {
+    -fx-background-color: black;
+    -fx-text-fill: snow;
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 14px;
+
+}
